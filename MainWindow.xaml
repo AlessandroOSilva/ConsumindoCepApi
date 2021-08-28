@@ -1,0 +1,30 @@
+﻿<Window x:Class="ConsumoDeApiWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ConsumoDeApiWPF"
+        mc:Ignorable="d"
+        Title="Search Stock" Height="450" Width="800">
+    <Grid>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+            <TextBlock Text="Symbol: " FontSize="25" Margin="3"></TextBlock>
+            <TextBox x:Name="txbSymbol" Width="200" Height="30" Margin="5" FontSize="25" VerticalAlignment="Top"></TextBox>
+            <Button x:Name="btnAcept" Content="BUSCA" Height="30" Width="90"  HorizontalAlignment="Right" VerticalAlignment="Top" FontSize="20" Margin="5" Click="btnAcept_Click"></Button>
+
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+            <TextBlock Text="Symbol: " FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5, 60,10,10"></TextBlock>
+            <TextBlock x:Name="txbSymb" Foreground="Blue" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5, 60,10,10"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+            <TextBlock Text="Empresa: " FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5, 100,10,10"></TextBlock>
+            <TextBlock x:Name="txbEmpresa" Foreground="Blue" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5, 100,10,10"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
+            <TextBlock Text="Preço: " FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5, 140,10,10"></TextBlock>
+            <TextBlock x:Name="txbPreço" Foreground="Blue" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5, 140,10,10"></TextBlock>
+        </StackPanel>
+
+    </Grid>
+</Window>
